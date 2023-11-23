@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, a {
+    font-family: 'Nunito', sans-serif;
+    color: #0C0C0C;
+    background-color: #faf8f8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+.header {
+    padding: 20px;
+    border-bottom: 2px solid #e3e3e3e5;
+    text-align: center;
+}
+
+.headerTitle {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.header a:hover {
+    color: rgb(40, 138, 105);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.content {
+    width: 75%;
+    margin: 20px auto 40px auto;
+}
+
+.contentTitle {
+    font-size: 30px;
+}
+
+.card {
+    margin: 20px 0;
+}
+
+.card h3 {
+    font-size: 18px;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.imageContainer img {
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.mainImage {
+    width: 100%;
+    height: 400px;
+}
+
+.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.horizontal img {
+    width: 24.5%;
+    height: 200px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.about .contentDescription {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+aside {
+    padding: 20px;
+    box-shadow: 0px 0.5px 1px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.bioTitle {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.profileName {
+    font-weight: bold;
+}
+
+.profilePicture {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+.social i {
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(45, 158, 120);
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    z-index: 100;
+}
+
+.overlay img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+.footer {
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .contentTitle {
+        font-size: 22px;
+    }
+
+    .horizontal img {
+        width: 49%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: none;
+    }
+
+    .horizontal img {
+        width: 100%;
+        height: auto;
+    }
+}
